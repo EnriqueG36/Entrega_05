@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Sarten",
+    "description": "Sarten con capa de teflon indestructible",
+    "code": "005",
+    "price": 210,
+    "status": true,
+    "stock": 30,
+    "category": "Utencilios de cocina",
+    "thumbnails": [],
+    "id": 1
+  },
+  {
+    "title": "Horno samsung",
+    "description": "Horno de microondas Samsumg capacidad media",
+    "code": "007",
+    "price": 2500,
+    "status": true,
+    "stock": 50,
+    "category": "Electrodomesticos",
+    "thumbnails": [],
+    "id": 8
+  },
+  {
+    "title": "vaso",
+    "description": "Un vaso de vidrio 355ml",
+    "code": "008",
+    "price": 25,
+    "status": true,
+    "stock": 100,
+    "category": "Utencilios de cocina",
+    "thumbnails": [],
+    "id": 4
+  }
+]

@@ -1,0 +1,24 @@
+<h1>Todos los productos, pero en tiempo real</h1>
+
+<div>
+	Socket.io
+	<hr>
+</div>
+<script> src="/socket.io/socket.io.js"</script>
+<script> src="/static/js/chat.js"</script>
+
+
+
+<h3> {{#each listaProductos}}</h3>
+        <div>
+            <p>{{this.title}}</p>
+            <p>{{this.description}}</p>
+            <p>{{this.code}}</p>
+            <p>{{this.price}}</p>
+            <p>{{this.status}}</p>
+            <p>{{this.stock}}</p>
+            <p>{{this.category}}</p>
+            <p>{{this.thumbnail}}</p>
+            <p>{{this.id}}</p>
+        </div>
+    {{/each}}
