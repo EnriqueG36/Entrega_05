@@ -35,7 +35,17 @@ router.get('/realtimeproducts', (req, res)=>{
 		dato = product.
 	})
 	*/
-	res.render('realTimeProducts', objetoPlantilla)
+
+	product.getProducts().then(result => {          //Aquí leemos nuestro archivo de productos y guardamos todo el contenido en result
+		
+		listaProductos = result						//Este objeto es el que se pasa a la plantilla, no se debe pasar directamente el arreglo de productos
+		objetoPlantilla = {listaProductos}
+		res.render('realTimeProducts', objetoPlantilla)
+		
+	})
+
+
+	//res.render('realTimeProducts', objetoPlantilla)
 })
 
 

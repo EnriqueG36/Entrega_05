@@ -36,8 +36,6 @@ app.use('/api/products', productRouter)	                        //api es por con
 app.use('/api/carts', cartRouter)
 app.use('/', viewRouter)
 
-//console.log(socketServer)
-//module.exports = socketServer;
 
 /*
 socketServer.on('connection', socket =>{

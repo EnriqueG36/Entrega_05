@@ -31,5 +31,31 @@
     "category": "Utencilios de cocina",
     "thumbnails": [],
     "id": 4
+  },
+  {
+    "title": "Refrigerador",
+    "description": "Refrigerador pequeño",
+    "code": "010",
+    "price": "6500",
+    "status": "true",
+    "stock": "5",
+    "category": "Electrodomesticos",
+    "thumbnails": [
+      ""
+    ],
+    "id": 4
+  },
+  {
+    "title": "Licuadora",
+    "description": "Licuadora molinex",
+    "code": "79",
+    "price": "300",
+    "status": true,
+    "stock": "64",
+    "category": "Electrodomesticos",
+    "thumbnails": [
+      ""
+    ],
+    "id": 5
   }
 ]

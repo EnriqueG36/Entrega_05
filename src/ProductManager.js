@@ -29,6 +29,7 @@ class ProductManager {
     async addProduct(newProduct){         
         try{
             
+            console.log("Dentro de addProduct");
             const fileContent = await fs.promises.readFile(this.path, 'utf-8');     
             const fileContentParseado = JSON.parse(fileContent);
                         
@@ -128,12 +129,12 @@ class ProductManager {
     async deleteProduct(productId){
 
         try{
-        console.log("Dentro de deleteProduct");
+        console.log(`Dentro de deleteProduct, id ${productId}`);
 
         let idFind = false;                                                 //Declaramos una variable vacia, se usa como true o false el id a buscar
         
         const fileContent = await fs.promises.readFile(this.path, 'utf-8');            //Leemos el contenido del archivo y lo asignamos a la variable
-        const fileContentParseado = JSON.parse(fileContent);                //Convertimos el contenido del archivo de texto a un objeto de js
+        const fileContentParseado = JSON.parse(fileContent);                            //Convertimos el contenido del archivo de texto a un objeto de js
 
         fileContentParseado.forEach(element => {
             if (element.id == productId){
@@ -146,6 +147,8 @@ class ProductManager {
 
         const fileContentJSON = JSON.stringify(fileContentParseado, 'null', 2);
         await fs.promises.writeFile(this.path, fileContentJSON, 'utf-8');  
+
+        //console.log(fileContentJSON)
 
         return (`Se eliminó el producto con el id ${productId} del archivo`)
         }
