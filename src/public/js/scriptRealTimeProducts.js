@@ -1,14 +1,16 @@
 //Este script conecta el scket/cliente con el socket/servidor
 
+//let listaProductos;
+
 const socket = io()
 
-    socket.on('productos', data=>{
-        console.log(data);
+    socket.on('productos', data=>{                                      //Escucha por el evento products, que nos traerá toda la lista de productos desde el servidor
+        console.log('Recibida la lista de productos');
+        //listaProductos = data;
+        document.getElementById("listaProductos").innerHTML = data      //Despliega la lista de productos en el elemento "listaProductos", dentro del documento
+      
+        
     })
-
-    console.log("Desde el script")
-
-    //socket.emit('message', 'Mensaje desde el socket cliente')
 
     socket.on('evento_todos', data=>{
         console.log(data)

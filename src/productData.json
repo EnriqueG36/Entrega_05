@@ -57,5 +57,18 @@
       ""
     ],
     "id": 5
+  },
+  {
+    "title": "Espatula",
+    "description": "Espatula para voltear hotcakes",
+    "code": "012",
+    "price": "45",
+    "status": true,
+    "stock": "68",
+    "category": "Utencilios de cocina",
+    "thumbnails": [
+      ""
+    ],
+    "id": 6
   }
 ]

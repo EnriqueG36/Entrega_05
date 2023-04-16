@@ -40,7 +40,7 @@ router.get('/realtimeproducts', (req, res)=>{
 		
 		listaProductos = result						//Este objeto es el que se pasa a la plantilla, no se debe pasar directamente el arreglo de productos
 		objetoPlantilla = {listaProductos}
-		res.render('realTimeProducts', objetoPlantilla)
+		res.render('realTimeProducts', {})
 		
 	})
 
